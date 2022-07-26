@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+		scroll-behavior: smooth;
+	}
+	
+	body {
+		margin: 0;
+	}
+	
+	
+	
+	img.resize {
+		max-height: 100%;
+		max-width: 100%;
+	}
+	
+	.parallax {
+  		position: sticky;
+		position: --webkit-sticky;
+		top: 0;
+	}
+	
+
+	p {
+		display: flex;
+		justify-content: center;
+		color: white;
+		font-family: consolas;
+		position: absolute;
+		top: 50px;
+		left: 10%;
+		right: 10%;
+		text-align: center;
+		
+	}
+	
+	p.outro {
+		top: 50%;
+		left: 30%;
+		right: 30%;
+	}
+	
+	@media (max-width: 390px) {
+		
+		
+		p {
+			font-size: 8px;
+			left: 20%;
+			right: 20%;
+			z-index: 1;
+		}
+		
+		body {
+			overflow-x: hidden; 
+		}
+		
+		p {
+			font-size: 8px;
+			left: 20%;
+			right: 20%;
+			z-index: 1;
+		}
+		
+		.parallax {
+			height: 50%;
+		}
+		
+		img {
+			transform: scale(2);
+			margin-top: 50%;
+		}
+		
+		.sky {
+			margin-top: 0;
+			margin-bottom: -60%;
+			transform: scale(3);
+		}
+	}
+

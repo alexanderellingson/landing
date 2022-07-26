@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" href="desktop/style.css">
+<style>
+	
+	html {
+		scroll-behavior: smooth;
+	}
+	
+	body {
+		margin: 0;
+	}
+	
+	
+	
+	img.resize {
+		max-height: 100%;
+		max-width: 100%;
+	}
+	
+	.parallax {
+  		position: sticky;
+		position: --webkit-sticky;
+		top: 0;
+	}
+	
+
+	p {
+		display: flex;
+		justify-content: center;
+		color: white;
+		font-family: consolas;
+		position: absolute;
+		top: 50px;
+		left: 10%;
+		right: 10%;
+		text-align: center;
+		
+	}
+	
+	p.outro {
+		top: 50%;
+		left: 30%;
+		right: 30%;
+	}
+	
+	@media (max-width: 390px) {
+		
+		
+		p {
+			font-size: 8px;
+			left: 20%;
+			right: 20%;
+			z-index: 1;
+		}
+		
+		body {
+			overflow-x: hidden; 
+		}
+		
+		p {
+			font-size: 8px;
+			left: 20%;
+			right: 20%;
+			z-index: 1;
+		}
+		
+		.parallax {
+			height: 50%;
+		}
+		
+		img {
+			transform: scale(2);
+			margin-top: 50%;
+		}
+		
+		.sky {
+			margin-top: 0;
+			margin-bottom: -60%;
+			transform: scale(3);
+		}
+	}
+
+
+</style>
+</head>
+
+<body>
+<section class="parallax">
+	<div>
+		<p class="header">welcome<br><br>this is my first attempt at creating<br>a parallax-effect site. my hope is to<br>utilize this style in a broad selection<br>of web-related scenarios, like:<br><br>landing pages<br>product drops<br>events<br>gags<br>informational one-offs<br>etc.</p>
+		<img class="resize sky" src="sky.png" al="sky">	
+	</div>
+</section>
+<section class="parallax">
+	<div>
+		<img class="resize" src="mountain-5.png" alt="sky">	
+	</div>
+</section>
+<section class="parallax">
+	<div>
+		<img class="resize" src="mountain-4.png" alt="sky">	
+	</div>
+</section>
+<section class="parallax">
+	<div>
+		<img class="resize" src="mountain-3.png" alt="sky">	
+	</div>
+</section>
+<section class="parallax">
+	<div>
+		<img class="resize" src="mountain-2.png" alt="sky">	
+	</div>
+</section>
+<section class="parallax">
+	<div>
+		<img class="resize" src="mountain-1.png" alt="sky">	
+	</div>
+</section>
+
+<section class="parallax">
+	<div>
+		<p class="outro">now, fuck off</p>
+		<img class="resize" src="cave.png" alt="cave">
+	</div>
+</section>
+</body>
+</html>
